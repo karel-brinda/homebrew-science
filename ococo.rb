@@ -10,7 +10,7 @@ class Ococo < Formula
   depends_on "htslib"
 
   def install
-    system "make", "HTSLIBINCLUDE=#{Formula["htslib"].opt_prefix}/include", "HTSLIB=#{Formula["htslib"].opt_prefix}/lib/libhts.a"
+    system "make", "HTSLIBINCLUDE=#{Formula["htslib"].opt_include}", "HTSLIB=#{Formula["htslib"].opt_lib}/libhts.a"
     bin.install "ococo"
     man1.install "ococo.1"
   end
