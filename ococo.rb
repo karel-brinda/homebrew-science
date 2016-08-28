@@ -1,8 +1,7 @@
 class Ococo < Formula
   desc "Ococo, the first online consensus caller"
   homepage "https://github.com/karel-brinda/ococo"
-  version "0.1.2.1"
-  url "https://github.com/karel-brinda/ococo/archive/#{version}.tar.gz"
+  url "https://github.com/karel-brinda/ococo/archive/0.1.2.1.tar.gz"
   sha256 "9fb55b1fad3647bc651a638851fe39c5c7151a0718034f22bf3129e29a1d965e"
 
   head "https://github.com/karel-brinda/ococo.git"
