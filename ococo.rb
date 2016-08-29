@@ -15,6 +15,8 @@ class Ococo < Formula
   end
 
   test do
-    system"#{bin}/ococo -v"
+    system "#{bin}/ococo -v"
+    (testpath/"test.sam").write "@SQ\tSN:chrom1\tLN:42424242\nread\t0\tchrom1\t2798553\t60\t5M\t*\t0\t0\tAAAGG\t*"
+    assert_match "5", shell_output("#{bin}/ococo -i test.sam -P - 2>/dev/null | wc -l")
   end
 end
